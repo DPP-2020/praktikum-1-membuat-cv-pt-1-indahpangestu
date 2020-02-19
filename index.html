@@ -26,8 +26,14 @@
             padding: 5px;
             border: 1px solid black;  
             background-color: white; 
+            }
+#mydoc {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
 }
-
     </style>
 </head>
 
@@ -42,7 +48,7 @@
             <div class="col-sm-4">
               <h3 style="color: darkmagenta"><span class="a">PROFILE</span></h3>
               <p>Hello, saya <b>Indah Pangestu</b>. <br> Saya mahasiswa Departemen Sistem Informasi Institut Teknologi Sepuluh Nopember.</p>
-              <h3 style="color:darkmagenta">Contact</h3>
+              <h3 style="color:darkmagenta"><span class="a">CONTACT</span></h3>
               <ul class="b">
                 <li>Email : indah.pangestu@yahoo.com </li>
                  <li>No. HP : 081234567890</li>
@@ -62,10 +68,28 @@
                 <ul class="b">
                     <li><b>Certified</b> by Oracle </li>
                     <li><b>Certified</b> by SAP </li>
-                    <li><b>Member</b> of HMSI </li>                
-            </p>
+                    <li><b>Member</b> of HMSI </li>    
+                    </ul>           
+            
+                <h2 style="color: midnightblue"><span class="a">PORTFOLIO</span></h2>
+                <button onclick="myFunction()">Close</button>
+
+<div id="mydoc">
+<img src="img.jpg" width="600px" title="Indah">
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("mydoc");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
             </div>
-          
+        </div> 
+         
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
