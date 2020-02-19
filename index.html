@@ -14,9 +14,20 @@
     <style>
         body {background-color: rgb(214, 185, 213)}
         div {  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;}
+               padding-right: 20px;
+               padding-bottom: 30px;
+               padding-left: 20px;}
+        ul.b {
+             list-style-type: square;}
+             span.a {
+            display: inline; /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;  
+            background-color: white; 
+}
+
     </style>
 </head>
 
@@ -29,27 +40,29 @@
       <div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-4">
-              <h3 style="color: darkmagenta">PROFILE</h3>
+              <h3 style="color: darkmagenta"><span class="a">PROFILE</span></h3>
               <p>Hello, saya <b>Indah Pangestu</b>. <br> Saya mahasiswa Departemen Sistem Informasi Institut Teknologi Sepuluh Nopember.</p>
               <h3 style="color:darkmagenta">Contact</h3>
-              <p>Email : <br>
-              No. HP : <br>
-              Alamat :
-              </p>
+              <ul class="b">
+                <li>Email : indah.pangestu@yahoo.com </li>
+                 <li>No. HP : 081234567890</li>
+                <li>Alamat : Jln. Keputih no. 100</li>
+                </ul>
+
             </div>
             <div class="col-sm-8">
-                <h2 style="color: midnightblue">EDUCATION</h2>
-                <p> SDN Keling 2 <br>
-                MTsN 7 Kediri <br>
-                SMAN 2 Pare <br>
-                Institut Teknologi Sepuluh Nopember
-            </p>
-
-                <h2 style="color: midnightblue">EXPERIENCE</h2>
-                <p>  <br>
-                 <br>
-                 <br>
-                
+                <h2 style="color: midnightblue"><span class="a">EDUCATION</span></h2>
+                <ul class="b">
+                <li> <b>2006</b> SDN Keling 2 </li>
+                <li><b>2012</b> MTsN 7 Kediri </li>
+                <li><b>2015</b> SMAN 2 Pare </li>
+                <li><b>2018</b> Institut Teknologi Sepuluh Nopember</li>
+</ul>
+                <h2 style="color: midnightblue"><span class="a">EXPERIENCE</span></h2>
+                <ul class="b">
+                    <li><b>Certified</b> by Oracle </li>
+                    <li><b>Certified</b> by SAP </li>
+                    <li><b>Member</b> of HMSI </li>                
             </p>
             </div>
           
